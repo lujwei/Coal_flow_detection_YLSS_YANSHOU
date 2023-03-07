@@ -1,0 +1,26 @@
+﻿  MFCApplication3Dlg.cpp
+  Unknown compiler version - please run the configure tests and report the results
+H:\pcl\PCL 1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99,3): warning C4996: 'pcl::SAC_SAMPLE_SIZE': This map is deprecated and is kept only to prevent breaking existing user code. Starting from PCL 1.8.0 model sample size is a protected member of the SampleConsensusModel class
+H:\pcl\PCL 1.8.1\include\pcl-1.8\pcl\sample_consensus\ransac.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(429,28): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(739,39): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(805,10): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>”
+          with
+          [
+              _Ty=SVzNLEyeCBInfo
+          ]
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(805,10): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>”
+          with
+          [
+              _Ty=SVzNLEyeCBInfo
+          ]
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(1265,33): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(1662,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“double”
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(1673,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“double”
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(1982,10): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(2187,16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(2211,16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(2227,16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(2395,34): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\MFCApplication3Dlg.cpp(1853): warning C4715: “WJ_CMEAR_CONNECT”: 不是所有的控件路径都返回值
+  MFCApplication3.vcxproj -> H:\Coal_flow_detection_YLSS_YANSHOU\x64\Debug\MFCApplication3.exe

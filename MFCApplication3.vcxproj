@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{962ED265-3C27-4DBE-B964-A8F99E5E7F93}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>MFCApplication3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\Coal_flow_detection_YLSS_YANSHOU12\MFCApplication3\pcl.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>H:\pcl\PCL 1.8.1\include\pcl-1.8;H:\pcl\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0;H:\pcl\PCL 1.8.1\3rdParty\Eigen\eigen3;H:\pcl\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;H:\pcl\PCL 1.8.1\3rdParty\FLANN\include;C:\Program Files\OpenNI2\Include;H:\pcl\PCL 1.8.1\3rdParty\Qhull\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\OpenNI2\Lib;H:\pcl\PCL 1.8.1\3rdParty\FLANN\lib;H:\pcl\PCL 1.8.1\3rdParty\Boost\lib;H:\pcl\PCL 1.8.1\3rdParty\VTK\lib;H:\pcl\PCL 1.8.1\3rdParty\Qhull\lib;H:\pcl\PCL 1.8.1\lib;$(LibraryPath)</LibraryPath>
+    <CopyLocalProjectReference>true</CopyLocalProjectReference>
+    <CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+    <CopyLocalDeploymentContent>true</CopyLocalDeploymentContent>
+    <CopyLocalDebugSymbols>true</CopyLocalDebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\SR_SdkDll\x64;H:\Coal_flow_detection_YLSS_YANSHOU\dll;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ShowIncludes>false</ShowIncludes>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>H:\Coal_flow_detection_YLSS_YANSHOU\MFCApplication3\SR_SdkDll\x64;H:\Coal_flow_detection_YLSS_YANSHOU\dll;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SR7Link.lib;VzNLDetect.lib;OpenNI2.lib;shell32.lib;vtknetcdf_c++.lib;pcl_common_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_io_ply_debug.lib;pcl_io_debug.lib;pcl_kdtree_debug.lib;pcl_keypoints_debug.lib;pcl_ml_debug.lib;pcl_octree_debug.lib;pcl_outofcore_debug.lib;pcl_people_debug.lib;pcl_recognition_debug.lib;pcl_registration_debug.lib;pcl_sample_consensus_debug.lib;pcl_search_debug.lib;pcl_segmentation_debug.lib;pcl_stereo_debug.lib;pcl_surface_debug.lib;pcl_tracking_debug.lib;pcl_visualization_debug.lib;libboost_atomic-vc141-mt-gd-1_64.lib;libboost_bzip2-vc141-mt-gd-1_64.lib;libboost_chrono-vc141-mt-gd-1_64.lib;libboost_container-vc141-mt-gd-1_64.lib;libboost_context-vc141-mt-gd-1_64.lib;libboost_coroutine-vc141-mt-gd-1_64.lib;libboost_date_time-vc141-mt-gd-1_64.lib;libboost_exception-vc141-mt-gd-1_64.lib;libboost_fiber-vc141-mt-gd-1_64.lib;libboost_filesystem-vc141-mt-gd-1_64.lib;libboost_graph-vc141-mt-gd-1_64.lib;libboost_graph_parallel-vc141-mt-gd-1_64.lib;libboost_iostreams-vc141-mt-gd-1_64.lib;libboost_locale-vc141-mt-gd-1_64.lib;libboost_log-vc141-mt-gd-1_64.lib;libboost_log_setup-vc141-mt-gd-1_64.lib;libboost_math_c99-vc141-mt-gd-1_64.lib;libboost_math_c99f-vc141-mt-gd-1_64.lib;libboost_math_c99l-vc141-mt-gd-1_64.lib;libboost_math_tr1-vc141-mt-gd-1_64.lib;libboost_math_tr1f-vc141-mt-gd-1_64.lib;libboost_math_tr1l-vc141-mt-gd-1_64.lib;libboost_mpi-vc141-mt-gd-1_64.lib;libboost_numpy3-vc141-mt-gd-1_64.lib;libboost_numpy-vc141-mt-gd-1_64.lib;libboost_prg_exec_monitor-vc141-mt-gd-1_64.lib;libboost_program_options-vc141-mt-gd-1_64.lib;libboost_python3-vc141-mt-gd-1_64.lib;libboost_python-vc141-mt-gd-1_64.lib;libboost_random-vc141-mt-gd-1_64.lib;libboost_regex-vc141-mt-gd-1_64.lib;libboost_serialization-vc141-mt-gd-1_64.lib;libboost_signals-vc141-mt-gd-1_64.lib;libboost_system-vc141-mt-gd-1_64.lib;libboost_test_exec_monitor-vc141-mt-gd-1_64.lib;libboost_thread-vc141-mt-gd-1_64.lib;libboost_timer-vc141-mt-gd-1_64.lib;libboost_type_erasure-vc141-mt-gd-1_64.lib;libboost_unit_test_framework-vc141-mt-gd-1_64.lib;libboost_wave-vc141-mt-gd-1_64.lib;libboost_wserialization-vc141-mt-gd-1_64.lib;libboost_zlib-vc141-mt-gd-1_64.lib;flann.lib;flann_cpp.lib;flann_cpp_s.lib;flann_s.lib;qhull_d.lib;qhullcpp_d.lib;qhullstatic_d.lib;qhullstatic_r_d.lib;qhull_p_d.lib;qhull_r_d.lib;vtkalglib-8.0-gd.lib;vtkChartsCore-8.0-gd.lib;vtkCommonColor-8.0-gd.lib;vtkCommonComputationalGeometry-8.0-gd.lib;vtkCommonCore-8.0-gd.lib;vtkCommonDataModel-8.0-gd.lib;vtkCommonExecutionModel-8.0-gd.lib;vtkCommonMath-8.0-gd.lib;vtkCommonMisc-8.0-gd.lib;vtkCommonSystem-8.0-gd.lib;vtkCommonTransforms-8.0-gd.lib;vtkDICOMParser-8.0-gd.lib;vtkDomainsChemistry-8.0-gd.lib;vtkexoIIc-8.0-gd.lib;vtkexpat-8.0-gd.lib;vtkFiltersAMR-8.0-gd.lib;vtkFiltersCore-8.0-gd.lib;vtkFiltersExtraction-8.0-gd.lib;vtkFiltersFlowPaths-8.0-gd.lib;vtkFiltersGeneral-8.0-gd.lib;vtkFiltersGeneric-8.0-gd.lib;vtkFiltersGeometry-8.0-gd.lib;vtkFiltersHybrid-8.0-gd.lib;vtkFiltersHyperTree-8.0-gd.lib;vtkFiltersImaging-8.0-gd.lib;vtkFiltersModeling-8.0-gd.lib;vtkFiltersParallel-8.0-gd.lib;vtkFiltersParallelImaging-8.0-gd.lib;vtkFiltersPoints-8.0-gd.lib;vtkFiltersProgrammable-8.0-gd.lib;vtkFiltersSelection-8.0-gd.lib;vtkFiltersSMP-8.0-gd.lib;vtkFiltersSources-8.0-gd.lib;vtkFiltersStatistics-8.0-gd.lib;vtkFiltersTexture-8.0-gd.lib;vtkFiltersTopology-8.0-gd.lib;vtkFiltersVerdict-8.0-gd.lib;vtkfreetype-8.0-gd.lib;vtkGeovisCore-8.0-gd.lib;vtkgl2ps-8.0-gd.lib;vtkhdf5-8.0-gd.lib;vtkhdf5_hl-8.0-gd.lib;vtkImagingColor-8.0-gd.lib;vtkImagingCore-8.0-gd.lib;vtkImagingFourier-8.0-gd.lib;vtkImagingGeneral-8.0-gd.lib;vtkImagingHybrid-8.0-gd.lib;vtkImagingMath-8.0-gd.lib;vtkImagingMorphological-8.0-gd.lib;vtkImagingSources-8.0-gd.lib;vtkImagingStatistics-8.0-gd.lib;vtkImagingStencil-8.0-gd.lib;vtkInfovisCore-8.0-gd.lib;vtkInfovisLayout-8.0-gd.lib;vtkInteractionImage-8.0-gd.lib;vtkInteractionStyle-8.0-gd.lib;vtkInteractionWidgets-8.0-gd.lib;vtkIOAMR-8.0-gd.lib;vtkIOCore-8.0-gd.lib;vtkIOEnSight-8.0-gd.lib;vtkIOExodus-8.0-gd.lib;vtkIOExport-8.0-gd.lib;vtkIOExportOpenGL-8.0-gd.lib;vtkIOGeometry-8.0-gd.lib;vtkIOImage-8.0-gd.lib;vtkIOImport-8.0-gd.lib;vtkIOInfovis-8.0-gd.lib;vtkIOLegacy-8.0-gd.lib;vtkIOLSDyna-8.0-gd.lib;vtkIOMINC-8.0-gd.lib;vtkIOMovie-8.0-gd.lib;vtkIONetCDF-8.0-gd.lib;vtkIOParallel-8.0-gd.lib;vtkIOParallelXML-8.0-gd.lib;vtkIOPLY-8.0-gd.lib;vtkIOSQL-8.0-gd.lib;vtkIOTecplotTable-8.0-gd.lib;vtkIOVideo-8.0-gd.lib;vtkIOXML-8.0-gd.lib;vtkIOXMLParser-8.0-gd.lib;vtkjpeg-8.0-gd.lib;vtkjsoncpp-8.0-gd.lib;vtklibharu-8.0-gd.lib;vtklibxml2-8.0-gd.lib;vtklz4-8.0-gd.lib;vtkmetaio-8.0-gd.lib;vtkNetCDF-8.0-gd.lib;vtkoggtheora-8.0-gd.lib;vtkParallelCore-8.0-gd.lib;vtkpng-8.0-gd.lib;vtkproj4-8.0-gd.lib;vtkRenderingAnnotation-8.0-gd.lib;vtkRenderingContext2D-8.0-gd.lib;vtkRenderingContextOpenGL-8.0-gd.lib;vtkRenderingCore-8.0-gd.lib;vtkRenderingFreeType-8.0-gd.lib;vtkRenderingGL2PS-8.0-gd.lib;vtkRenderingImage-8.0-gd.lib;vtkRenderingLabel-8.0-gd.lib;vtkRenderingLIC-8.0-gd.lib;vtkRenderingLOD-8.0-gd.lib;vtkRenderingOpenGL-8.0-gd.lib;vtkRenderingVolume-8.0-gd.lib;vtkRenderingVolumeOpenGL-8.0-gd.lib;vtksqlite-8.0-gd.lib;vtksys-8.0-gd.lib;vtktiff-8.0-gd.lib;vtkverdict-8.0-gd.lib;vtkViewsContext2D-8.0-gd.lib;vtkViewsCore-8.0-gd.lib;vtkViewsInfovis-8.0-gd.lib;vtkzlib-8.0-gd.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CMyNewDlg.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="InfiniteLoop.h" />
+    <ClInclude Include="MAINDlg.h" />
+    <ClInclude Include="MFCApplication3.h" />
+    <ClInclude Include="MFCApplication3Dlg.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="read_txt.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SRLink.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="VZNL_Common.h" />
+    <ClInclude Include="VZNL_DetectConfig.h" />
+    <ClInclude Include="VZNL_DetectLaser.h" />
+    <ClInclude Include="VZNL_Export.h" />
+    <ClInclude Include="VZNL_EyeConfig.h" />
+    <ClInclude Include="VZNL_Graphics.h" />
+    <ClInclude Include="VZNL_Types.h" />
+    <ClInclude Include="WJcamera.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMyNewDlg.cpp" />
+    <ClCompile Include="InfiniteLoop.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MAINDlg.cpp" />
+    <ClCompile Include="MFCApplication3.cpp" />
+    <ClCompile Include="MFCApplication3Dlg.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="read_txt.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="WJcamera.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCApplication3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="res\MFCApplication3.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="D:\project\1.png" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\MFCApplication3.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets" Condition="Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" />
+    <Import Project="..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets" Condition="Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
+  </Target>
+</Project>

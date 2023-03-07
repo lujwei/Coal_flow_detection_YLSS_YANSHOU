@@ -1,0 +1,4 @@
+﻿  MFCApplication3Dlg.cpp
+MFCApplication3Dlg.obj : error LNK2001: 无法解析的外部符号 "public: void __thiscall CMFCApplication3Dlg::OnEnChangeEdit1(void)" (?OnEnChangeEdit1@CMFCApplication3Dlg@@QAEXXZ)
+MFCApplication3Dlg.obj : error LNK2001: 无法解析的外部符号 "public: void __thiscall CMFCApplication3Dlg::OnBnClickedButton1(void)" (?OnBnClickedButton1@CMFCApplication3Dlg@@QAEXXZ)
+C:\Users\A\source\repos\MFCApplication3\Debug\MFCApplication3.exe : fatal error LNK1120: 2 个无法解析的外部命令
